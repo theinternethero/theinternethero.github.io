@@ -65,7 +65,7 @@
   }
   document.addEventListener("mousemove", parallax);
 
-  Mobile Parallax
+  // Mobile Parallax
   window.addEventListener('DOMContentLoaded', function() {
     this.addEventListener('touchmove', function(e) {
       document.querySelectorAll(".layer").forEach(layer => {
