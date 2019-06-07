@@ -65,22 +65,22 @@
   }
   document.addEventListener("mousemove", parallax);
 
-  // Mobile Parallax
-  // window.addEventListener('DOMContentLoaded', function() {
-  //   this.addEventListener('touchmove', function(e) {
-  //     document.querySelectorAll(".layer").forEach(layer => {
-  //       let speed = layer.getAttribute("data-speed");
-  //       layer.style.transform = `translateX(${e.touches[0].pageX*speed/500}px)`;
-  //     });
-  //   });
+  Mobile Parallax
+  window.addEventListener('DOMContentLoaded', function() {
+    this.addEventListener('touchmove', function(e) {
+      document.querySelectorAll(".layer").forEach(layer => {
+        let speed = layer.getAttribute("data-speed");
+        layer.style.transform = `translateX(${e.touches[0].pageX*speed/500}px)`;
+      });
+    });
 
-  //   Сбрасывает при отпускании пальцам с пов-ти экрана:
-  //   this.addEventListener('touchend', function(e) {
-  //     document.querySelectorAll(".layer").forEach(layer => {
-  //       layer.style.transform = `translateX(0px)`;
-  //     });
-  //   });
-  // });
+    // Сбрасывает при отпускании пальцам с пов-ти экрана:
+    // this.addEventListener('touchend', function(e) {
+    //   document.querySelectorAll(".layer").forEach(layer => {
+    //     layer.style.transform = `translateX(0px)`;
+    //   });
+    // });
+  });
 
   // Glitch
   const gsTitle = {
